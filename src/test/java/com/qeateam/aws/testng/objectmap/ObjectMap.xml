@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ObjectMap.xsd">
+  <screen screenId="netFlixHome">
+    <object objectId="signInBtn">
+      <objectProperty>xpath=html/body/div[1]/div/div[1]/a[2]</objectProperty>
+    </object>
+  </screen>
+  
+  <screen screenId="netFlixLogin">
+    <object objectId="emailInputBox">
+      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/label/input</objectProperty>
+    </object>
+    <object objectId="emailPsdBox">
+      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/div[1]/label/input</objectProperty>
+    </object>
+    <object objectId="LoginInBtn">
+      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/button</objectProperty>
+    </object>
+  </screen>
+</class>

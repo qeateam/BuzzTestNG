@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CopyTextMap.xsd">
+  <screen screenId="netFlixHome">
+    <object objectId="watchMsg">
+      <objectProperty>xpath=html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[1]/p</objectProperty>
+      <text1>WATCH ANYWHERE. CANCEL ANYTIME.</text1>
+    </object>
+  </screen>
+</class>
