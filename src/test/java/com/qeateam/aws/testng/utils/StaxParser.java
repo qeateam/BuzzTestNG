@@ -77,7 +77,7 @@ public class StaxParser implements GlobalObjects {
 			// iterate ofver events as they occur while parsing the XML document
 			XMLEventReader eventReader;
 			eventReader = factory.createXMLEventReader(new FileReader(new File(
-					"E:\\QEAWS_27Jun17\\testngAWS\\src\\test\\java\\com\\qeateam\\aws\\testng\\objectmap\\CopyTextMap.xml")));
+					".src/test/java/com/qeateam/aws/testng/objectmap/CopyTextMap.xml")));
 			factory.setProperty(XMLInputFactory.IS_COALESCING, true);
 
 			// Used to check further events exists or not
@@ -225,7 +225,7 @@ public class StaxParser implements GlobalObjects {
 			 */
 
 			eventReader = factory.createXMLEventReader(new FileReader(new File(
-					"E:\\QEAWS_27Jun17\\testngAWS\\src\\test\\java\\com\\qeateam\\aws\\testng\\objectmap\\ObjectMap.xml")));
+					".src/test/java/com/qeateam/aws/testng/objectmap/ObjectMap.xml")));
 			factory.setProperty(XMLInputFactory.IS_COALESCING, true);
 			// Used to check further events exists or not
 			while (eventReader.hasNext()) {
