@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 
 import javax.xml.stream.XMLStreamException;
 
+import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.apache.xerces.util.URI.MalformedURIException;
 import org.openqa.selenium.By;
@@ -28,12 +29,13 @@ public class Global implements GlobalObjects{
 	//public AppiumDriver appiumDriver;
 	public WebElement webelement;
 	private List<WebElement> lsElements;
+	public static Logger mainLogger;
 	ReadConfigProps readConfigProperties= new ReadConfigProps();
 	
 	
 	//Applicable locator types.
 	public enum locator {
-		ID, XPATH
+		ID, XPATH, CLASSNAME, CSSSELECTOR, LINKTEXT, NAME, TAGNAME
 	}
 	
 	/**
@@ -57,6 +59,31 @@ public class Global implements GlobalObjects{
 		case XPATH:
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locatorReference)));
 			element = driver.findElement(By.xpath(locatorReference));
+			break;
+			
+		case CLASSNAME:
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.className(locatorReference)));
+			element = driver.findElement(By.className(locatorReference));
+			break;
+			
+		case CSSSELECTOR:
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(locatorReference)));
+			element = driver.findElement(By.cssSelector(locatorReference));
+			break;
+			
+		case LINKTEXT:
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(locatorReference)));
+			element = driver.findElement(By.linkText(locatorReference));
+			break;
+			
+		case NAME:
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.name(locatorReference)));
+			element = driver.findElement(By.name(locatorReference));
+			break;
+			
+		case TAGNAME:
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName(locatorReference)));
+			element = driver.findElement(By.tagName(locatorReference));
 			break;
 			
 		default:
@@ -83,6 +110,26 @@ public class Global implements GlobalObjects{
 			lsElements = driver.findElements(By.xpath(locatorReference));
 			break;
 			
+		case CLASSNAME:
+			lsElements = driver.findElements(By.className(locatorReference));
+			break;
+			
+		case CSSSELECTOR:
+			lsElements = driver.findElements(By.cssSelector(locatorReference));
+			break;
+			
+		case LINKTEXT:
+			lsElements = driver.findElements(By.linkText(locatorReference));
+			break;
+			
+		case NAME:
+			lsElements = driver.findElements(By.name(locatorReference));
+			break;
+			
+		case TAGNAME:
+			lsElements = driver.findElements(By.tagName(locatorReference));
+			break;
+			
 		default:
 			throw new IllegalArgumentException("Invalid selection method specified !!!");
 			
@@ -106,6 +153,7 @@ public class Global implements GlobalObjects{
 			objectPropertyArray[1] = objectProperty.substring((objectProperty.indexOf("=")+1), (objectProperty.length()));
 		}catch(Exception e){
 			e.printStackTrace();
+			mainLogger.error(e);
 		}
 		
 		return objectPropertyArray;
@@ -122,9 +170,10 @@ public class Global implements GlobalObjects{
 		try {
 			System.out.println("CONFIG PROPS BROWSER>>>>>>>>>>>>>>>>>>>"+objReadConfigProps.BROWSER);
 			objInvokeBrowser.invokeBrowser(browsers.valueOf(objReadConfigProps.BROWSER.toUpperCase()));
+			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			mainLogger.error(e);
 		}
 		
 	}
@@ -147,8 +196,8 @@ public class Global implements GlobalObjects{
 			//TBC: Add reporting steps
 			
 		}catch(Exception e){
-			throw e;
-			//TBC: log the exception
+			e.printStackTrace();
+			mainLogger.error(e);
 		}
 		
 	}
@@ -180,8 +229,8 @@ public class Global implements GlobalObjects{
 			//TBC: Add reporting steps
 			
 		}catch(Exception e){
-			throw e;
-			//TBC: log the exception
+			e.printStackTrace();
+			mainLogger.error(e);
 		}
 	}
 	
