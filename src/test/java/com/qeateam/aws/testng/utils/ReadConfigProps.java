@@ -1,5 +1,6 @@
 package com.qeateam.aws.testng.utils;
 
+import java.io.InputStream;
 import java.util.ResourceBundle;
 
 public class ReadConfigProps {
@@ -8,7 +9,7 @@ public class ReadConfigProps {
 	public static String URL, DBUSERNAME, DBPASSWORD, PLATFORM, BROWSER;
 	public void retrieve_configProperties() {
 
-		ResourceBundle objResBundle = ResourceBundle.getBundle("./src/test/resources/Properties/config.properties");
+		ResourceBundle objResBundle = ResourceBundle.getBundle("properties.config");
 		URL = (String) objResBundle.getObject("URL");
 		System.out.println("URL>>"+URL);
 		DBUSERNAME = (String) objResBundle.getObject("DBUSERNAME");
@@ -19,7 +20,6 @@ public class ReadConfigProps {
 		System.out.println("PLATFORM>>"+PLATFORM);
 		BROWSER = (String) objResBundle.getObject("BROWSER");
 		System.out.println("BROWSER>>"+BROWSER);
-		
 		
 
 	}
