@@ -8,7 +8,7 @@ public class ReadConfigProps {
 	public static String URL, DBUSERNAME, DBPASSWORD, PLATFORM, BROWSER;
 	public void retrieve_configProperties() {
 
-		ResourceBundle objResBundle = ResourceBundle.getBundle("properties.config");
+		ResourceBundle objResBundle = ResourceBundle.getBundle("./src/test/resources/properties.config");
 		URL = (String) objResBundle.getObject("URL");
 		System.out.println("URL>>"+URL);
 		DBUSERNAME = (String) objResBundle.getObject("DBUSERNAME");
