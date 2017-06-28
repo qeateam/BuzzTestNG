@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71217" started-at="2017-06-27T13:38:53Z" finished-at="2017-06-27T13:40:04Z">
+  <suite name="Default suite" duration-ms="100332" started-at="2017-06-28T08:36:22Z" finished-at="2017-06-28T08:38:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71217" started-at="2017-06-27T13:38:53Z" finished-at="2017-06-27T13:40:04Z">
+    <test name="Default test" duration-ms="100332" started-at="2017-06-28T08:36:22Z" finished-at="2017-06-28T08:38:03Z">
       <class name="com.qeateam.aws.testngAWS.AppTestNG">
-        <test-method status="PASS" signature="validateLogin()[pri:0, instance:com.qeateam.aws.testngAWS.AppTestNG@1f50bcc]" name="validateLogin" duration-ms="71186" started-at="2017-06-27T19:08:53Z" finished-at="2017-06-27T19:10:04Z">
+        <test-method status="PASS" signature="validateLogin()[pri:0, instance:com.qeateam.aws.testngAWS.AppTestNG@a097cc]" name="validateLogin" duration-ms="100169" started-at="2017-06-28T14:06:23Z" finished-at="2017-06-28T14:08:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogin -->

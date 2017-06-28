@@ -1,7 +1,7 @@
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testngAWS\AppTestNG.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\StaxParser.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\JsonDataReader.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\Global.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\InvokeBrowser.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\GlobalObjects.java
-E:\QEAWS_27Jun17\testngAWS\src\test\java\com\qeateam\aws\testng\utils\ReadConfigProps.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\StaxParser.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testngAWS\AppTestNG.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\Global.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\InvokeBrowser.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\ReadConfigProps.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\GlobalObjects.java
+C:\Users\Sumanta\git_28Jun\BuzzTestNG\src\test\java\com\qeateam\aws\testng\utils\JsonDataReader.java
