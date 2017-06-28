@@ -27,4 +27,19 @@ public class AppTestNG implements GlobalObjects {
 			e.printStackTrace();
 		}
 	}
+	
+	/*@Test
+	public void addUserToSampleApp(){
+		try{
+			//Launch App
+			objGlobal.launchApp();
+			//Click on a Add User
+			objGlobal.genericClick("addUserBtn", "sampleAppHome");
+			//Enter FirstName
+			objGlobal.genericEnterText("Test1", "UserName", "emailInputBox", "netFlixLogin");
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+	}*/
+	
 }

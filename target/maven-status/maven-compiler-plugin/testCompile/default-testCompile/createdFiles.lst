@@ -1,0 +1,11 @@
+com\qeateam\aws\testng\utils\StaxParser.class
+com\qeateam\aws\testng\utils\Global$locator.class
+com\qeateam\aws\testng\utils\InvokeBrowser.class
+com\qeateam\aws\testng\utils\GlobalObjects.class
+com\qeateam\aws\testng\utils\Global.class
+com\qeateam\aws\testngAWS\AppTestNG.class
+com\qeateam\aws\testng\utils\InvokeBrowser$browsers.class
+com\qeateam\aws\testng\utils\ReadConfigProps.class
+com\qeateam\aws\testng\utils\JsonDataReader.class
+com\qeateam\aws\testng\utils\Global$1.class
+com\qeateam\aws\testng\utils\InvokeBrowser$1.class

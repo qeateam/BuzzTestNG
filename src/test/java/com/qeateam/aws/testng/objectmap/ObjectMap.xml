@@ -17,4 +17,10 @@
       <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/button</objectProperty>
     </object>
   </screen>
+  
+  <screen screenId="sampleAppHome">
+    <object objectId="addUserBtn">
+      <objectProperty>xpath=html/body/nav/div/div[2]/ul/li[1]/a/i</objectProperty>
+    </object>
+  </screen>
 </class>
