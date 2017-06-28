@@ -42,11 +42,11 @@ public class InvokeBrowser implements GlobalObjects {
 			if (objReadConfigProps.PLATFORM.equals("MOBILE")) {
 				
 				DesiredCapabilities capabilities = new DesiredCapabilities();
-				capabilities.setBrowserName("chrome");
+				//capabilities.setBrowserName("chrome");
 				// capabilities.setCapability(CapabilityType.BROWSER_NAME, "CHROME");
-				capabilities.setCapability("deviceName", "ZY2232GXWX");
-				capabilities.setCapability("platformName", "Android");
-				capabilities.setCapability("platformVersion", "6.0.1");
+				//capabilities.setCapability("deviceName", "ZY2232GXWX");
+				//capabilities.setCapability("platformName", "Android");
+				//capabilities.setCapability("platformVersion", "6.0.1");
 				objGlobal.driver = new RemoteWebDriver(url, capabilities);
 
 				objGlobal.driver.get(objReadConfigProps.URL);
@@ -68,11 +68,11 @@ public class InvokeBrowser implements GlobalObjects {
 
 			if (objReadConfigProps.PLATFORM.equals("MOBILE")) {
 				DesiredCapabilities capabilities = new DesiredCapabilities();
-				capabilities.setBrowserName("chrome");
+				//capabilities.setBrowserName("chrome");
 				// capabilities.setCapability(CapabilityType.BROWSER_NAME, "CHROME");
-				capabilities.setCapability("deviceName", "ZY2232GXWX");
-				capabilities.setCapability("platformName", "Android");
-				capabilities.setCapability("platformVersion", "6.0.1");
+				//capabilities.setCapability("deviceName", "ZY2232GXWX");
+				//capabilities.setCapability("platformName", "Android");
+				//capabilities.setCapability("platformVersion", "6.0.1");
 				
 				objGlobal.driver = new RemoteWebDriver(url, capabilities);
 
