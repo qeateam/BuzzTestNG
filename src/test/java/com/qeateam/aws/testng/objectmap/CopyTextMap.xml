@@ -6,4 +6,12 @@
       <text1>WATCH ANYWHERE. CANCEL ANYTIME.</text1>
     </object>
   </screen>
+  <!-- Start - Objects for Home Page -->
+  <screen screenId="petclinicHome">
+    <object objectId="welcomeMsgObj">
+      <objectProperty>xpath=html/body/app-root/app-welcome/h1</objectProperty>
+      <text1>Welcome to Dr. Dolittle Petclinic</text1>
+    </object>
+  </screen>
+  <!-- End - Objects for Home Page -->
 </class>

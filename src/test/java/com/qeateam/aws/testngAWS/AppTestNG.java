@@ -28,6 +28,28 @@ public class AppTestNG implements GlobalObjects {
 		}
 	}
 	
+	//#########################START: This section contains tests for Home page validations#######################
+	
+	//Test Description - This validates existance and text for Hoome Navigation Link
+	//Date - 29 Jun 17
+	//Created By - Sumanta Roy
+	@Test
+	public void validateHomeNavigationLink(){
+		try{
+			//Launch App
+			objGlobal.launchApp();
+			//Click on Home 
+			objGlobal.genericClick("homeLink", "petclinicHome");
+			//Verify Home Welcome message
+			objGlobal.genericVerifyCopyText("text1", "petclinicHome", "welcomeMsgObj");
+		}catch(Exception e){
+			objGlobal.mainLogger.error(e);
+		}
+	}
+	
+	//#########################END: This section contains tests for Home page validations#######################
+	
+	
 	/*@Test
 	public void addUserToSampleApp(){
 		try{
