@@ -390,6 +390,9 @@ public class AppTestNG implements GlobalObjects {
 			objGlobal.genericVerifyCopyText("text1", "specialityPage", "verifyName");
 		} catch (Exception e) {
 			objGlobal.mainLogger.error(e);
+		}finally {
+			// Tear Down method to close all the browser instances
+			objGlobal.endTest();
 		}
 	}
 
@@ -412,6 +415,9 @@ public class AppTestNG implements GlobalObjects {
 
 		} catch (Exception e) {
 			objGlobal.mainLogger.error(e);
+		}finally {
+			// Tear Down method to close all the browser instances
+			objGlobal.endTest();
 		}
 	}
 
@@ -436,6 +442,9 @@ public class AppTestNG implements GlobalObjects {
 
 		} catch (Exception e) {
 			objGlobal.mainLogger.error(e);
+		}finally {
+			// Tear Down method to close all the browser instances
+			objGlobal.endTest();
 		}
 	}
 
