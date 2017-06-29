@@ -1,17 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CopyTextMap.xsd">
-  <screen screenId="netFlixHome">
-    <object objectId="watchMsg">
-      <objectProperty>xpath=html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[1]/p</objectProperty>
-      <text1>WATCH ANYWHERE. CANCEL ANYTIME.</text1>
-    </object>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="CopyTextMap.xsd">
+
+	<!-- Start - Objects for Home Page -->
+	<screen screenId="petclinicHome">
+		<object objectId="welcomeMsgObj">
+			<objectProperty>xpath=html/body/app-root/app-welcome/h1</objectProperty>
+			<text1>Welcome to Dr. Dolittle Petclinic</text1>
+		</object>
+		<object objectId="homeLinkTextObj">
+			<objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[1]/a/span[2]</objectProperty>
+			<text1>Home</text1>
+		</object>
+		<object objectId="welcomeShortMsgObj">
+			<objectProperty>xpath=html/body/app-root/app-welcome/div/div/h2</objectProperty>
+			<text1>Welcome</text1>
+		</object>
+	</screen>
+	<!-- End - Objects for Home Page -->
+
+	<!-- Start - Objects for Owners Page -->
+	<screen screenId="petclinicOwner">
+		<object objectId="ownerLinkObj">
+			<objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/a</objectProperty>
+			<text1>Owners</text1>
+		</object>
+		<object objectId="allLinkObj">
+			<objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/ul/li[1]/a/span[2]</objectProperty>
+			<text1>All</text1>
+		</object>
+		<object objectId="addNewLinkObj">
+			<objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/ul/li[2]/a/span[2]</objectProperty>
+			<text1>Add New</text1>
+		</object>
+		<object objectId="ownerHeaderObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/h2</objectProperty>
+			<text1>Owners</text1>
+		</object>
+		<object objectId="ownerTableHeaderNameObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/table/thead/tr/th[1]</objectProperty>
+			<text1>Name</text1>
+		</object>
+		<object objectId="ownerTableHeaderAddressObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/table/thead/tr/th[2]</objectProperty>
+			<text1>Address</text1>
+		</object>
+		<object objectId="ownerTableHeaderCityObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/table/thead/tr/th[3]</objectProperty>
+			<text1>City</text1>
+		</object>
+		<object objectId="ownerTableHeaderTelephoneObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/table/thead/tr/th[4]</objectProperty>
+			<text1>Telephone</text1>
+		</object>
+		<object objectId="ownerTableHeaderPetsObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/table/thead/tr/th[5]</objectProperty>
+			<text1>Pets</text1>
+		</object>
+		<object objectId="addOwnerBtnObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/div/button</objectProperty>
+			<text1>Add Owner</text1>
+		</object>
+		<object objectId="newOwnerHeaderObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/h2</objectProperty>
+			<text1>New Owner</text1>
+		</object>
+		<object objectId="newOwnerFldFNameObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[2]/label</objectProperty>
+			<text1>First Name</text1>
+		</object>
+		<object objectId="newOwnerFldLNameObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[3]/label</objectProperty>
+			<text1>Last Name</text1>
+		</object>
+		<object objectId="newOwnerFldAddrObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[4]/label</objectProperty>
+			<text1>Address</text1>
+		</object>
+		<object objectId="newOwnerFldCityObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[5]/label</objectProperty>
+			<text1>City</text1>
+		</object>
+		<object objectId="newOwnerFldTelephoneObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[6]/label</objectProperty>
+			<text1>Telephone</text1>
+		</object>
+		<object objectId="newOwnerBackBtnObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[7]/div/button[1]</objectProperty>
+			<text1>Back</text1>
+		</object>
+		<object objectId="newOwnerAddOwnerBtnObj">
+			<objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[7]/div/button[2]</objectProperty>
+			<text1>Add Owner</text1>
+		</object>
+	</screen>
+	<!-- End - Objects for Owners Page -->
+
+	<!-- Start - Objects for Veterinarians Page -->
+	<screen screenId="petClinicVeterinariansPage">
+		<object objectId="searchAllObj">
+			<objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[3]/ul/li[1]/a</objectProperty>
+			<text1>All</text1>
+		</object>
+		<object objectId="addNewObj">
+			<objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[3]/ul/li[2]/a</objectProperty>
+			<text1>Add New</text1>
+		</object>
+		<object objectId="veterinariansHeading">
+			<objectProperty>xpath=/html/body/app-root/app-vet-list/div/div/h2</objectProperty>
+			<text1>Veterinarians</text1>
+		</object>
+		<object objectId="veterinariansTableContentsName">
+			<objectProperty>xpath=//*[@id="vets"]/thead/tr/th[1]</objectProperty>
+			<text1>Name</text1>
+		</object>
+		<object objectId="veterinariansTableContentsSpecialties">
+			<objectProperty>xpath=//*[@id="vets"]/thead/tr/th[2]</objectProperty>
+			<text1>Specialties</text1>
+		</object>
+		<object objectId="veterinariansHomeButton">
+			<objectProperty>xpath=/html/body/app-root/app-vet-list/div/div/div/button[1]</objectProperty>
+			<text1>Home</text1>
+		</object>
+		<object objectId="veterinariansAddVetButton">
+			<objectProperty>xpath=/html/body/app-root/app-vet-list/div/div/div/button[2]</objectProperty>
+			<text1>Add Vet</text1>
+		</object>
+		<object objectId="verifyHomeScreenOnClickingHomeButton">
+			<objectProperty>xpath=/html/body/app-root/app-welcome/h1</objectProperty>
+			<text1>Welcome to Dr. Dolittle Petclinic</text1>
+		</object>
+		<object objectId="verifyAddVetScreen">
+			<objectProperty>xpath=/html/body/app-root/app-vet-add/p</objectProperty>
+			<text1>vet-add works!</text1>
+		</object>
+	</screen>
+	<!-- End - Objects for Veterinarians Page -->
+
+
+	<!-- Start - Objects for Pet Types Page -->
+	<screen screenId="petClinicPetTypesPage">
+		<object objectId="verifyPetTypesScreen">
+			<objectProperty>xpath=/html/body/app-root/app-page-not-found/h1</objectProperty>
+			<text1>Oops! Page not found !</text1>
+		</object>
+		<object objectId="verifyNotFoundErrorOnPetTypesScreen">
+			<objectProperty>xpath=/html/body/app-root/app-page-not-found/div/div/h2</objectProperty>
+			<text1>Not Found - 404 error</text1>
+		</object>
+	</screen>
+	<!-- End - Objects for Pet Types Page -->
+	
+	<!-- Start - Objects for speciality Page -->
+  <screen screenId="specialityPage">
+    <object objectId="verifyHomeButton">
+	  <objectProperty>xpath=/html/body/app-root/app-specialty-list/div/div/div/button[1]</objectProperty>
+	  <text1>Home</text1>
+	</object>
+	<object objectId="verifyAddButton">
+	  <objectProperty>xpath=/html/body/app-root/app-specialty-list/div/div/div/button[2]</objectProperty>
+	  <text1>Add</text1>
+	</object>
+    <object objectId="verifyId">
+	  <objectProperty>xpath=//*[@id="vets"]/thead/tr/th[1]</objectProperty>
+	  <text1>Id</text1>
+	</object>
+	<object objectId="verifyName">
+	  <objectProperty>xpath=//*[@id="vets"]/thead/tr/th[2]</objectProperty>
+	  <text1>Name</text1>
+	</object>
+	<object objectId="verifyNewAddedSpeciality">
+	  <objectProperty>xpath=/html/body/app-root/app-specialty-list/div/div/div[1]/app-specialty-add/div/div/h2</objectProperty>
+	  <text1>New Specialty</text1>
+	</object>
   </screen>
-  <!-- Start - Objects for Home Page -->
-  <screen screenId="petclinicHome">
-    <object objectId="welcomeMsgObj">
-      <objectProperty>xpath=html/body/app-root/app-welcome/h1</objectProperty>
-      <text1>Welcome to Dr. Dolittle Petclinic</text1>
-    </object>
-  </screen>
-  <!-- End - Objects for Home Page -->
+<!-- End - Objects for speciality Page --> 
 </class>

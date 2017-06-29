@@ -18,7 +18,7 @@ import io.appium.java_client.MobileElement;
 
 public class InvokeBrowser implements GlobalObjects {
 	public enum browsers {
-		FIRFOX, CHROME
+		FIREFOX, CHROME
 	}
 
 	public void invokeBrowser(browsers browserName) throws MalformedURIException, MalformedURLException {
@@ -34,7 +34,7 @@ public class InvokeBrowser implements GlobalObjects {
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 
 		switch (browserName) {
-		case FIRFOX:
+		case FIREFOX:
 			if (objReadConfigProps.PLATFORM.equals("WEB")) {
 				objGlobal.driver = new FirefoxDriver();
 				objGlobal.driver.get(objReadConfigProps.URL);
@@ -59,8 +59,8 @@ public class InvokeBrowser implements GlobalObjects {
 			if (objReadConfigProps.PLATFORM.equals("WEB")) {
 				// System.setProperty("webdriver.chrome.driver", "---PATH TO
 				// CHROME EXE FILE---");
-				// System.setProperty("webdriver.chrome.driver",
-				// "C:\\chromedriver_win32\\chromedriver.exe");
+				 /*System.setProperty("webdriver.chrome.driver",
+				 "E:\\ChromeDriver\\chromedriver.exe");*/
 				objGlobal.driver = new ChromeDriver();
 				objGlobal.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				objGlobal.driver.get(objReadConfigProps.URL);

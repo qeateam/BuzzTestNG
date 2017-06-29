@@ -29,8 +29,9 @@ public class Global implements GlobalObjects {
 	// public AppiumDriver appiumDriver;
 	public WebElement webelement;
 	private List<WebElement> lsElements;
-	public static Logger mainLogger;
 	ReadConfigProps readConfigProperties = new ReadConfigProps();
+	
+	public static Logger mainLogger = Logger.getLogger(Global.class.getName());
 
 	// Applicable locator types.
 	public enum locator {
@@ -339,7 +340,15 @@ public class Global implements GlobalObjects {
 			System.out.println("Copytext matches !!!");
 		} else {
 			System.out.println("Copytext DOES NOT matches !!!");
+			
 		}
+	}
+	
+	/**
+	 * Close the browser and test.
+	 */
+	public void endTest(){
+		driver.quit();
 	}
 
 }

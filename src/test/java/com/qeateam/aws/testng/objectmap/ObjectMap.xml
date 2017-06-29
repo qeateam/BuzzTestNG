@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ObjectMap.xsd">
-  <screen screenId="netFlixHome">
-    <object objectId="signInBtn">
-      <objectProperty>xpath=html/body/div[1]/div/div[1]/a[2]</objectProperty>
-    </object>
-  </screen>
-  
-  <screen screenId="netFlixLogin">
-    <object objectId="emailInputBox">
-      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/label/input</objectProperty>
-    </object>
-    <object objectId="emailPsdBox">
-      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/div[1]/label/input</objectProperty>
-    </object>
-    <object objectId="LoginInBtn">
-      <objectProperty>xpath=.//*[@id='appMountPoint']/div/div[2]/div/div/form[1]/button</objectProperty>
-    </object>
-  </screen>
-  
-  <screen screenId="sampleAppHome">
-    <object objectId="addUserBtn">
-      <objectProperty>xpath=html/body/nav/div/div[2]/ul/li[1]/a/i</objectProperty>
-    </object>
-  </screen>
   
   <!-- Start - Objects for Home Page -->
   <screen screenId="petclinicHome">
@@ -31,4 +8,81 @@
     </object>
   </screen>
   <!-- End - Objects for Home Page -->
+  
+  <!-- Start - Objects for Owner Page -->
+  <screen screenId="petclinicOwner">
+    <object objectId="ownerLinkObj">
+      <objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/a</objectProperty>
+    </object>
+    <object objectId="ownerAllLinkObj">
+      <objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/ul/li[1]/a/span[2]</objectProperty>
+    </object>
+    <object objectId="addOwnerBtnObj">
+      <objectProperty>xpath=html/body/app-root/app-owner-list/div/div/div/div/button</objectProperty>
+    </object>
+    <object objectId="ownerAddNewLinkObj">
+      <objectProperty>xpath=html/body/app-root/div/nav/div/ul/li[2]/ul/li[2]/a/span[2]</objectProperty>
+    </object>
+     <object objectId="ownerBackBtnObj">
+      <objectProperty>xpath=html/body/app-root/app-owner-add/div/div/form/div[7]/div/button[1]</objectProperty>
+    </object>
+    <object objectId="firstNameTextObj">
+      <objectProperty>xpath=.//*[@id='firstName']</objectProperty>
+    </object>
+    <object objectId="lastNameTextObj">
+      <objectProperty>xpath=.//*[@id='lastName']</objectProperty>
+    </object>
+    <object objectId="addressTextObj">
+      <objectProperty>xpath=.//*[@id='address']</objectProperty>
+    </object>
+    <object objectId="cityTextObj">
+      <objectProperty>xpath=.//*[@id='city']</objectProperty>
+    </object>
+    <object objectId="telephoneTextObj">
+      <objectProperty>xpath=.//*[@id='telephone']</objectProperty>
+    </object>
+  </screen>
+  <!-- End - Objects for Owner Page -->
+  
+  <!-- Start - Objects for Veterinarians Page -->
+  <screen screenId="petClinicVeterinariansPage">
+    <object objectId="veterinariansLink">
+      <objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[3]/a</objectProperty>
+    </object>
+    <object objectId="veterinariansAllLink">
+      <objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[3]/ul/li[1]/a</objectProperty>
+    </object>
+    <object objectId="veterinariansHomeButton">
+      <objectProperty>xpath=/html/body/app-root/app-vet-list/div/div/div/button[1]</objectProperty>
+    </object>
+    <object objectId="veterinariansaAddVetButton">
+      <objectProperty>xpath=/html/body/app-root/app-vet-list/div/div/div/button[2]</objectProperty>
+    </object>  
+    <object objectId="veterinariansAddNewLink">
+      <objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[3]/ul/li[2]/a</objectProperty>
+    </object>
+  </screen>
+<!-- End - Objects for Veterinarians Page -->
+  
+
+<!-- Start - Objects for Pet Types Page -->
+  <screen screenId="petClinicPetTypesPage">
+  	<object objectId="petTypesLink">
+	  <objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[4]/a/span[2]</objectProperty>
+	</object>
+  </screen>
+<!-- End - Objects for Pet Types Page --> 
+<!-- Start - Objects for speciality Page -->
+  <screen screenId="specialityPage">
+  	<object objectId="clickSpecialityLink">
+	  <objectProperty>xpath=/html/body/app-root/div/nav/div/ul/li[5]/a/span[2]</objectProperty>
+	</object>
+	<object objectId="verifyNotFoundErrorOnPetTypesScreen">
+	  <objectProperty>xpath=/html/body/app-root/app-page-not-found/div/div/h2</objectProperty>
+	</object>
+	<object objectId="specialityAddButton">
+	  <objectProperty>xpath=/html/body/app-root/app-specialty-list/div/div/div[2]/button[2]</objectProperty>
+	</object>
+  </screen>
+<!-- End - Objects for speciality Page -->
 </class>

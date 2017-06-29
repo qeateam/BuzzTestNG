@@ -1,10 +1,11 @@
 {
-	"Test1": [
-		{ "UserName" : "12345"},
-		{ "Password" : "12345"}
-	],
-	"addUserToSampleApp": [
+	
+	"validateAddNewOwnerSuccessfuly":[
 		{"FirstName" : "Sumanta"},
-		{"LastName" : "Roy"}
-	]
+		{"LastName" : "Roy"},
+		{"Address" : "Silver Oak"},
+		{"City" : "Pune"},
+		{"Telephone" : "9765560829"},
+		
+	]	
 }
